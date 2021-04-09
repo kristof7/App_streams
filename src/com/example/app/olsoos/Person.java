@@ -1,6 +1,10 @@
 package com.example.app.olsoos;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
+
+    // we should have to add Serializable if we want to save Object with ObjectOutputStream
 
     public String name;
     public String surname;
