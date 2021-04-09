@@ -30,10 +30,15 @@ public class Main {
 //            String text = (String)ois.readObject();
 //            System.out.println(text);
 
+            Person p = (Person) ois.readObject();
+            System.out.println(p);
+
 
         }finally {
             if (oos != null)
                 oos.close();
+            if (ois != null)
+                ois.close();
         }
 
     }
