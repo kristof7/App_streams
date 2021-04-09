@@ -18,10 +18,11 @@ public class Main {
 
 
         try{
-            // in this file we save our object
+            // in this lines we save our object
             oos = new ObjectOutputStream(new FileOutputStream("oosFile.txt"));
             oos.writeObject(s);
 
+            // in this lines we read our object
             ois = new ObjectInputStream(new FileInputStream("oosFile.txt"));
             String text = (String)ois.readObject();
             System.out.println(text);
