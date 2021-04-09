@@ -26,6 +26,8 @@ public class Main {
         }finally {
          if(fis != null)
             fis.close();
+         if(fos != null)
+             fos.close();
         }
 
     }
